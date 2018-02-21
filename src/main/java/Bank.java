@@ -9,8 +9,14 @@
  */
 public class Bank {
 
-    public String bankName;
+    /**
+     *
+     */
+    private String bankName;
 
+    /**
+     *
+     */
     public Bank() {
         bankName = "Illini Bank";
     }
@@ -29,6 +35,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return true;
     }
 
     /**
@@ -45,6 +52,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return true;
     }
 
     /**
@@ -64,11 +72,12 @@ public class Bank {
         /*
          * Implement this function
          */
+
+        return true;
     }
 
     /**
      * Change back account owner name.
-     *
      * @param bankAccount to change
      * @param name new name to set
      */
@@ -79,7 +88,11 @@ public class Bank {
          */
     }
 
-    public static int totalAccounts = 0;
+    /**
+     * total number of active accounts at this Bank.
+     */
+    private static int totalAccounts = 0;
+
     /**
      * Uses static variable to get number of bank accounts opened.
      *
@@ -89,6 +102,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return totalAccounts;
     }
 
     /**
@@ -105,7 +119,6 @@ public class Bank {
         // Create Bank Accounts
         BankAccount account1 = new BankAccount("John Doe", BankAccount.BankAccountType.CHECKINGS);
         System.out.println("Bank account for John Doe created");
-
         BankAccount account2 = new BankAccount("Jony Ive", BankAccount.BankAccountType.STUDENT);
         System.out.println("Bank account for Johy Ive created\n\n");
 
